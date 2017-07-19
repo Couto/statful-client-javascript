@@ -26,7 +26,7 @@ export default [
     Object.assign({}, defaults, {
         dest: 'dist/statful.umd.min.js',
         format: 'umd',
-        plugins: defaults.plugins.concat(uglify())
+        plugins: [uglify()].concat(defaults.plugins)
     }),
 
     // Browser not so friendly with global variable
@@ -39,6 +39,6 @@ export default [
     Object.assign({}, defaults, {
         dest: 'dist/statful.min.js',
         format: 'iife',
-        plugins: defaults.plugins.concat(uglify())
+        plugins: [uglify()].concat(defaults.plugins)
     }),
 ];
