@@ -1,4 +1,5 @@
 {
+  "extends":["prettier"],
     "globals": {
         "StatfulUtil": true,
         "StatfulLogger": true,

@@ -4,7 +4,16 @@
   "description": "Statful client for Javascript applications",
   "banner": "/**\n* <%= pkg.name %> <%= pkg.version %>\n* Copyright 2017 Statful <https://www.statful.com/>\n*/\n",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.json": ["prettier --parser json --write"]
   },
   "repository": {
     "type": "git",
@@ -18,16 +27,20 @@
   },
   "homepage": "https://github.com/statful/statful-client-javascript#readme",
   "devDependencies": {
+    "eslint-config-prettier": "^2.3.0",
     "grunt": "~1.0.1",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-uglify": "^2.3.0",
     "grunt-eslint": "^19.0.0",
     "grunt-karma": "^2.0.0",
+    "husky": "^0.14.3",
     "jasmine-core": "^2.6.1",
     "karma": "^1.6.0",
     "karma-coverage": "^1.1.1",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
-    "load-grunt-tasks": "^3.5.2"
+    "lint-staged": "^4.0.2",
+    "load-grunt-tasks": "^3.5.2",
+    "prettier": "^1.5.3"
   }
 }
