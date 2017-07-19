@@ -3,17 +3,10 @@
   "version": "2.0.2",
   "description": "Statful client for Javascript applications",
   "main": "dist/statful.js",
-  "authors": [
-    "Jose Tavares <jose.tavares@mindera.com>"
-  ],
+  "authors": ["Jose Tavares <jose.tavares@mindera.com>"],
   "license": "MIT",
   "homepage": "https://github.com/statful/statful-client-javascript",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "tests"
-  ],
+  "ignore": ["**/.*", "node_modules", "bower_components", "tests"],
   "dependencies": {},
   "devDependencies": {
     "usertiming": "^0.1.8",
