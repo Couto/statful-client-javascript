@@ -6,7 +6,7 @@
   "scripts": {
     "build": "NODE_ENV=production rollup -c",
     "karma": "karma start --single-run",
-    "eslint": "eslint -c eslint.json src/*.js",
+    "eslint": "eslint .",
     "test": "npm run eslint && npm run karma"
   },
   "repository": {
