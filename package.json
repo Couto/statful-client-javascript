@@ -8,7 +8,7 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "prettier --write", "git add"],
+    "*.js": ["prettier --write", "git add"],
     "*.json": ["prettier --parser json --write", "git add"]
   },
   "repository": {
